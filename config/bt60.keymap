@@ -24,7 +24,7 @@
                   &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE   &mo 2  &kp RGUI  &kp RALT  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         ARROWS {
@@ -36,7 +36,7 @@
          &trans  &trans  &trans  &trans   &mo 2  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise {
@@ -48,7 +48,7 @@
                    &trans        &trans        &trans      &trans      &trans  &kp HOME  &kp PG_DN  &kp END
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
