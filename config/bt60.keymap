@@ -15,7 +15,10 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LSHFT &kp SPACE>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp LSHFT &kp SPACE>,
+                <&macro_release>;
         };
     };
 
