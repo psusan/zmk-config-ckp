@@ -10,24 +10,16 @@
             label = "sleep";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp RCMD>,
                 <&macro_tap>,
-                <&kp F12>,
-                <&macro_release>,
-                <&kp LCMD>;
+                <&kp RCMD &kp F12>;
         };
         Language: Language {
             compatible = "zmk,behavior-macro";
             label = "language";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT &kp LSHFT>,
                 <&macro_tap>,
-                <&kp SPACE>,
-                <&macro_release>,
-                <&kp LALT &kp LSHIFT>;
+                <&kp LALT &kp LSHFT &kp SPACE>;
         };
     };
 
