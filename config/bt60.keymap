@@ -15,7 +15,7 @@
                 <&macro_tap>,
                 <&kp F12>,
                 <&macro_release>,
-                <&kp LCMD>;
+                <&kp RCMD>;
         };
         Language: Language {
             compatible = "zmk,behavior-macro";
