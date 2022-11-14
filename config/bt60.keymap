@@ -7,7 +7,7 @@
     macros {
         Sleep: Sleep {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "sleep";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -15,11 +15,11 @@
                 <&macro_tap>,
                 <&kp F12>,
                 <&macro_release>,
-                <&kp RCMD>;
+                <&kp LCMD>;
         };
         Language: Language {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "language";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -27,7 +27,7 @@
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LALT &kp LSHFT>;
+                <&kp LALT &kp LSHIFT>;
         };
     };
 
