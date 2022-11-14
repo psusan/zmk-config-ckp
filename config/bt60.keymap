@@ -9,7 +9,10 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp RCMD &kp F12>;
+            bindings =
+                <&macro_press>,
+                <&kp RCMD &kp F12>,
+                <&macro_release>;
         };
         Language: Language {
             compatible = "zmk,behavior-macro";
