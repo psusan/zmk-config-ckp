@@ -7,19 +7,27 @@
     macros {
         Sleep: Sleep {
             compatible = "zmk,behavior-macro";
-            label = "sleep";
+            label = "Sleep";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&kp RCMD>,
                 <&macro_tap>,
-                <&kp RCMD &kp F12>;
+                <&kp F12>,
+                <&macro_release>,
+                <&kp RCMD>;
         };
         Language: Language {
             compatible = "zmk,behavior-macro";
-            label = "language";
+            label = "Language";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&kp LALT &kp LSHFT>,
                 <&macro_tap>,
-                <&kp LALT &kp LSHFT &kp SPACE>;
+                <&kp SPACE>,
+                <&macro_press>,
+                <&kp LALT &kp LSHFT>;
         };
     };
 
