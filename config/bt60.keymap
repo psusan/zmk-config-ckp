@@ -27,7 +27,7 @@
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LALT &kp LSHIFT>;
+                <&kp LALT &kp LSHFT>;
         };
     };
 
