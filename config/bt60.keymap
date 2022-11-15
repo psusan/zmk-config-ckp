@@ -37,6 +37,7 @@
         LEFTESC {
             bindings = <&kp ESC>;
             key-positions = <54 0>;
+            layers = <0 1>;
         };
     };
 
