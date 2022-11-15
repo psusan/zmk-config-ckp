@@ -56,7 +56,7 @@
 
         ARROWS {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp ESC  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &kp UP          &trans
