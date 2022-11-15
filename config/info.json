@@ -68,7 +68,7 @@
         { "label": "LEFT", "row": 4, "col": 6, "x": 11, "y": 4, "w":1 },
         { "label": "DOWN", "row": 4, "col": 7, "x": 12, "y": 4, "w":1 },
         { "label": "UP", "row": 4, "col": 8, "x": 13, "y": 4, "w":1 },
-        { "label": "RIGHT", "row": 4, "col": 8, "x": 14, "y": 4, "w":1 }
+        { "label": "RIGHT", "row": 4, "col": 9, "x": 14, "y": 4, "w":1 }
 
       ]
     }
