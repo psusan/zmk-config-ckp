@@ -69,6 +69,7 @@
         alttab {
             bindings = <&alttabmacro>;
             key-positions = <56 14>;
+            timeout-ms = <1000>;
         };
     };
 
