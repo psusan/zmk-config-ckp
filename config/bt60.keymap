@@ -16,6 +16,9 @@
                 <&kp F12>,
                 <&macro_release>,
                 <&kp RCMD>;
+
+            wait-ms = <20>;
+            tap-ms = <50>;
         };
         Language: Language {
             compatible = "zmk,behavior-macro";
@@ -28,6 +31,24 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LALT &kp LSHFT>;
+
+            wait-ms = <20>;
+            tap-ms = <50>;
+        };
+        alttabmacro: alttabmacro {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            tap-ms = <50>;
+            wait-ms = <20>;
         };
     };
 
@@ -40,9 +61,14 @@
             layers = <0 1>;
         };
 
-        new_combo {
+        fn {
             bindings = <&mo 1>;
             key-positions = <59 60>;
+        };
+
+        alttab {
+            bindings = <&alttabmacro>;
+            key-positions = <56 14>;
         };
     };
 
@@ -71,11 +97,11 @@
 
         raise {
             bindings = <
-     &kp ESC        &kp F1        &kp F2        &kp F3      &kp F4      &kp F5  &kp F6    &kp F7     &kp F8   &kp F9       &kp F10       &kp F11  &kp F12  &kp DEL
- &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR      &trans  &trans    &trans     &trans   &trans        &trans        &trans   &trans
-    &kp CAPS        &trans        &trans        &trans      &trans      &trans  &trans    &trans     &trans   &trans        &trans        &trans   &trans   &trans
-      &trans  &kp C_VOL_DN  &kp C_VOL_UP        &trans  &bl BL_INC  &bl BL_DEC  &trans    &trans     &trans   &trans  &kp C_VOL_DN  &kp C_VOL_UP   &trans                   &kp PG_UP
-                    &trans        &trans        &trans      &trans      &trans  &trans  &kp HOME  &kp PG_DN  &kp END
+  &kp ESC        &kp F1        &kp F2        &kp F3      &kp F4      &kp F5  &kp F6    &kp F7     &kp F8   &kp F9       &kp F10       &kp F11  &kp F12      &kp DEL
+   &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR      &trans  &trans    &trans     &trans   &trans        &trans        &trans   &trans
+ &kp CAPS        &trans        &trans        &trans      &trans      &trans  &trans    &trans     &trans   &trans        &trans        &trans   &trans  &bootloader
+   &trans  &kp C_VOL_DN  &kp C_VOL_UP        &trans  &bl BL_INC  &bl BL_DEC  &trans    &trans     &trans   &trans  &kp C_VOL_DN  &kp C_VOL_UP   &trans                       &kp PG_UP
+                 &trans        &trans        &trans      &trans      &trans  &trans  &kp HOME  &kp PG_DN  &kp END
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
